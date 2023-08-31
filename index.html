@@ -4,33 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Homemade+Apple&family=Lumanosimo&family=Playball&family=Poppins:wght@300;400&family=Silkscreen&family=Tinos&display=swap" rel="stylesheet">
+   
     <link
-      href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Lumanosimo&family=Playball&family=Silkscreen&family=Tinos&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Homemade+Apple&family=Lumanosimo&family=Playball&family=Poppins:wght@300&family=Silkscreen&family=Tinos&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
+
     <link href="style.css" rel="stylesheet" />
+    
   </head>
   <body>
     <section class="Navbar">
       <div class="nav">
-        <h2>Darshan Portfolio</h2>
+        <h2 class="web_name">Darshan Portfolio</h2>
         <a>
           <ul class="nav navcont">
-            <li class="listcont"><a href="?">About</a></li>
-            <li class="listcont"><a href="?">Projects</a></li>
-            <li class="listcont"><a href="?">Contact Me</a></li>
+            <li id="about" class="listcont">About</li>
+            <li class="listcont"><a href="#scrollproject">Projects</a></li>
+            <li id="contactme" class="listcont">Contact Me</li>
           </ul>
         </a>
         <div class="mobilenav">
-          <img src="./hero/more.png" alt="mobile navebar">
+          <img src="./hero/more.png" alt="mobile navebar" />
         </div>
       </div>
     </section>
@@ -44,105 +42,142 @@
               This is my official Portfolio website to showcase my all works
             </p>
             <p>related to web development and ui design and I am passionate</p>
-            <span id="element"></span>
+            <span class="auto_type"></span>
             <div>
-              <button class="btn btn-light rounded-pill px-3" type="button">
-                Download CV
-              </button>
+              <a href="./hero/CV.pdf" download="DarshanCV">
+                <button class="download" type="button" download>
+                  Download CV
+                </button>
+              </a>
             </div>
           </div>
           <img class="personal" src="./hero/personal.png" />
         </div>
       </div>
+      <div class="about" id="aboutsec">
+        <h3>About</h3>
+        <p>
+          As a dedicated third-year Computer Engineering student at SPPU, I am
+          driven by a passion for technology and a thirst for knowledge. My
+          coursework has equipped me with a solid understanding of HTML, CSS,
+          and learning JavaScript and database. I am excited to contribute my
+          skills to innovative projects. and am committed to continuous learning
+          and growth. Let's connect and explore ways to collaborate and create a
+          brighter technological future.
+        </p>
+        <button id="close">Close</button>
+      </div>
+      <div class="contact" id="contact">
+        <h3>Contact</h3>
+        <span
+          ><img
+            class="mail"
+            src="./hero/icons8-gmail.svg"
+          />darshanmjadhav5@gmail.com</span
+        >
+        <span
+          ><img class="linkedin" src="./hero/icons8-linkedin-48.png" /><a
+            class="ancorname"
+            href="https://www.linkedin.com/in/darshan-jadhav-47b84824b/"
+            target="_blank"
+            >LinkedIn</a
+          ></span
+        >
+        <span class="mob"
+          ><img class="call" src="./hero/icons8-call-64.png" />+91
+          7757996883</span
+        >
+        <button id="close2">Close</button>
+      </div>
     </section>
-    <section>
-      <div class="container px-4 py-5" id="featured-3">
-        <h2 class="pb-2 border-bottom">Projects</h2>
-        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-          <div class="feature col">
-            <div
-              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
-            >
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#collection"></use>
-              </svg>
-            </div>
-            <h3 class="feature">Canteen E-Wallet</h3>
-            <p>
-              Paragraph of text beneath the heading to explain the heading.
-              We'll add onto it with another sentence and probably just keep
-              going until we run out of words.
-            </p>
-            <a href="#" class="icon-link">
-              Read More
-              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-            </a>
+    <section class="projects" id="scrollproject">
+
+      
+      <div class="ptitle"><h2>Projects</h2></div>
+      <div class="card_container">
+        <div class="card" style="width: 18rem">
+          <h2 class="project_no">01</h2>
+          <h4 class="card_title">Number Guessing Game</h4>
+          <img
+            class="project_img"
+            src="./hero/numbergame.jpg"
+            style="height: 150px"
+          />
+          <div class="btn">
+            <button id="card_btn">Github</button>
+            <button id="card_btn">Live Demo</button>
           </div>
-          <div class="feature col">
-            <div
-              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
-            >
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#people-circle"></use>
-              </svg>
-            </div>
-            <h3 class="feature">Featured title</h3>
-            <p>
-              Paragraph of text beneath the heading to explain the heading.
-              We'll add onto it with another sentence and probably just keep
-              going until we run out of words.
-            </p>
-            <a href="#" class="icon-link">
-              Read More
-              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-            </a>
+        </div>
+
+        <div class="card">
+          <h4 class="card_title">Number Guessing Game</h4>
+          <img
+            class="project_img"
+            src="./hero/numbergame.jpg"
+            style="height: 150px"
+          />
+          <div class="btn">
+            <button id="card_btn">Github</button>
+            <button id="card_btn">Live Demo</button>
           </div>
-          <div class="feature col">
-            <div
-              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
-            >
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#toggles2"></use>
-              </svg>
-            </div>
-            <h3 class="ffeature">Featured title</h3>
-            <p>
-              Paragraph of text beneath the heading to explain the heading.
-              We'll add onto it with another sentence and probably just keep
-              going until we run out of words.
-            </p>
-            <a href="#" class="icon-link">
-              Read More
-              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-            </a>
+        </div>
+
+        <div class="card">
+          <h4 class="card_title">Number Guessing Game</h4>
+          <img
+            class="project_img"
+            src="./hero/numbergame.jpg"
+            style="height: 150px"
+          />
+          <div class="btn">
+            <button id="card_btn">Github</button>
+            <button id="card_btn">Live Demo</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4 class="card_title">Number Guessing Game</h4>
+          <img
+            class="project_img"
+            src="./hero/numbergame.jpg"
+            style="height: 150px"
+          />
+
+          <div class="btn">
+            <button id="card_btn">Github</button>
+            <button id="card_btn">Live Demo</button>
           </div>
         </div>
       </div>
     </section>
-    <section>
-      <div class="container">
-        <footer class="py-3 my-4">
-          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-body-secondary">projects</a>
-            </li>
+    <section id="footer">
+      <div class="footer">
+        <footer>
 
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-body-secondary">About</a>
-            </li>
-          </ul>
-          <p class="footerpara">© 2023 Darshan Portfolio</p>
         </footer>
       </div>
     </section>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="new.js"></script>
     <script>
-      var typed = new Typed("#element", {
+      VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+      });
+      VanillaTilt.init(document.querySelector(".personal"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+      });
+      var typed = new Typed(".auto_type", {
         strings: ["Graphic Designer.", "Codder.", "Web Developer."],
-        typeSpeed: 70,
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true,
       });
     </script>
   </body>
