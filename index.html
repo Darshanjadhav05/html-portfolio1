@@ -4,17 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Homemade+Apple&family=Lumanosimo&family=Playball&family=Poppins:wght@300;400&family=Silkscreen&family=Tinos&display=swap" rel="stylesheet">
-   
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Homemade+Apple&family=Lumanosimo&family=Playball&family=Poppins:wght@300;400&family=Silkscreen&family=Tinos&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Homemade+Apple&family=Lumanosimo&family=Playball&family=Poppins:wght@300&family=Silkscreen&family=Tinos&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <link href="style.css" rel="stylesheet" />
-    
   </head>
   <body>
     <section class="Navbar">
@@ -28,16 +37,33 @@
           </ul>
         </a>
         <div class="mobilenav">
-          <img src="./hero/more.png" alt="mobile navebar" />
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
       </div>
     </section>
 
     <section>
       <div>
+        <div class="mobnav_container v-hide">
+          <nav class="navbar">
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a href="#scrollproject" class="nav-link">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a href="#icon" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#icon" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
         <div class="hero">
           <div>
-            <h1>Hi, I'M<span> Darshan Jadhav</span></h1>
+            <h1>Hi, I'M<span id="darshan"> Darshan Jadhav</span></h1>
             <p>
               This is my official Portfolio website to showcase my all works
             </p>
@@ -91,25 +117,32 @@
       </div>
     </section>
     <section class="projects" id="scrollproject">
-
-      
       <div class="ptitle"><h2>Projects</h2></div>
       <div class="card_container">
         <div class="card" style="width: 18rem">
           <h2 class="project_no">01</h2>
-          <h4 class="card_title">Number Guessing Game</h4>
+          <h4 class="card_title">E-Wallet System For Canteen</h4>
           <img
             class="project_img"
             src="./hero/numbergame.jpg"
             style="height: 150px"
           />
           <div class="btn">
-            <button id="card_btn">Github</button>
-            <button id="card_btn">Live Demo</button>
+            <a
+              href="https://github.com/Darshanjadhav05/Number-Guessing-game"
+              target="_blank"
+              ><button id="card_btn">Github</button></a
+            >
+            <a
+              href="https://darshanjadhav05.github.io/Number-Guessing-game/"
+              target="_blank"
+              ><button id="card_btn">Live Demo</button></a
+            >
           </div>
         </div>
 
         <div class="card">
+          <h2 class="project_no">02</h2>
           <h4 class="card_title">Number Guessing Game</h4>
           <img
             class="project_img"
@@ -117,46 +150,86 @@
             style="height: 150px"
           />
           <div class="btn">
-            <button id="card_btn">Github</button>
-            <button id="card_btn">Live Demo</button>
+            <a
+              href="https://github.com/Darshanjadhav05/Number-Guessing-game"
+              target="_blank"
+              ><button id="card_btn">Github</button></a
+            >
+            <a
+              href="https://darshanjadhav05.github.io/Number-Guessing-game/"
+              target="_blank"
+              ><button id="card_btn">Live Demo</button></a
+            >
           </div>
         </div>
 
         <div class="card">
-          <h4 class="card_title">Number Guessing Game</h4>
+          <h2 class="project_no">03</h2>
+          <h4 class="card_title">Drum Kit</h4>
           <img
             class="project_img"
-            src="./hero/numbergame.jpg"
+            src="./hero/drumkit.jpg"
             style="height: 150px"
           />
           <div class="btn">
-            <button id="card_btn">Github</button>
-            <button id="card_btn">Live Demo</button>
+            <a
+              href="https://github.com/Darshanjadhav05/drum-kit"
+              target="_blank"
+              ><button id="card_btn">Github</button></a
+            >
+            <a
+              href="https://darshanjadhav05.github.io/drum-kit/"
+              target="_blank"
+              ><button id="card_btn">Live Demo</button></a
+            >
           </div>
         </div>
 
         <div class="card">
-          <h4 class="card_title">Number Guessing Game</h4>
+          <h2 class="project_no">04</h2>
+          <h4 class="card_title">Diccee Game</h4>
           <img
             class="project_img"
-            src="./hero/numbergame.jpg"
+            src="./hero/dicee.jpg"
             style="height: 150px"
           />
 
           <div class="btn">
-            <button id="card_btn">Github</button>
-            <button id="card_btn">Live Demo</button>
+            <a
+              href="https://github.com/Darshanjadhav05/decide-game"
+              target="_blank"
+              ><button id="card_btn">Github</button></a
+            >
+            <a
+              href="https://darshanjadhav05.github.io/decide-game/"
+              target="_blank"
+              ><button id="card_btn">Live Demo</button></a
+            >
           </div>
         </div>
       </div>
     </section>
-    <section id="footer">
-      <div class="footer">
-        <footer>
-
-        </footer>
+    <footer id="footer">
+      <div class="footercontainer">
+        <h4 class="talk">Let's Talk</h4>
+        <div id="icon" class="socialicons">
+          <a href="https://www.linkedin.com/in/darshan-jadhav-47b84824b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/darshanjadhav05/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/Darshanjadhav05/html-portfolio1" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="footerNav">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Contact</a></li>
+            <!-- <li><a href=""></a></li> -->
+          </ul>
+        </div>
+        <div class="footerbottom">
+          <p>Designed by <span class="Designer">Darshan Jadhav</span></p>
+        </div>
       </div>
-    </section>
+    </footer>
+
     <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="new.js"></script>
