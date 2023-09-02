@@ -1,5 +1,3 @@
-
-
 let about = document.getElementById("about");
 let aboutdiv = document.getElementById("aboutsec");
 let hero = document.querySelector(".hero");
@@ -25,7 +23,6 @@ close1.addEventListener("click", function () {
   hero.style.filter = "blur(0)";
   aboutdiv.style.transition = "0.3s";
   aboutdiv.style.visibility = "hidden";
- 
 });
 
 contact.addEventListener("click", contactt);
@@ -43,3 +40,19 @@ close2.addEventListener("click", function () {
   hero.style.filter = "blur(0)";
   contactdiv.style.visibility = "hidden";
 });
+const hamburger = document.querySelector(".mobilenav");
+const navmenu = document.querySelector(".nav-menu");
+
+
+
+const respmenu = document.querySelector(".mobnav_container");
+
+hamburger.addEventListener("click", ()=>{
+  
+  respmenu.classList.toggle("v-hide")
+});
+
+hamburger.addEventListener("click",()=>{
+  hamburger.classList.toggle("action");
+  
+})
